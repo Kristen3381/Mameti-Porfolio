@@ -423,6 +423,7 @@
   .proc-cat li{font-size:0.93rem; padding:9px 0; border-bottom:1px dashed var(--line); color:var(--ink-soft); display:flex; gap:10px;}
   .proc-cat li:last-child{border-bottom:none;}
   .proc-cat li::before{content:"✓"; color:var(--teal-bright); font-weight:700; flex-shrink:0;}
+  .proc-full{grid-column:1 / -1;}
   @media (max-width:900px){ .proc-grid{grid-template-columns:1fr;} }
 
   .proc-cat-scroll{position:relative;}
@@ -811,7 +812,7 @@
           <li>Nasogastric tube insertion</li>
         </ul>
       </div>
-      <div class="proc-cat proc-cat-scroll reveal" style="grid-column: span 3;">
+      <div class="proc-cat proc-cat-scroll proc-full reveal">
         <h3>Obstetric &amp; Surgical</h3>
         <ul class="proc-scroll">
           <li>Normal vaginal delivery</li>
